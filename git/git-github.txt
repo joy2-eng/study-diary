@@ -1,0 +1,7 @@
+git init                                                  对当前文件夹的仓库进行初始化，使当前文件夹拥有自己的仓库。
+rm -rf .git                                             删除git仓库所有的提交历史，代码文件等内容保留，再次使用需要重新初始化
+git remote add origin 仓库地址        建立远程连接，仓库地址可以是http/ssh ，地址就在hithub仓库主页右上角绿色code按钮里面
+git remote remove origin                  断开远程连接，比如换了仓库时需要更换仓库地址
+git add 文件名                                      .可以表示当前文件夹所有内容，将指定内容加入到保存缓冲区
+git commit -m “  ”                          将缓存区的内容保存为一个节点  -m选项表示message。
+git push -u origin 分支名称               把已经commit的内容上传到github仓库
